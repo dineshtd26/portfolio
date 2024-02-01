@@ -22,7 +22,7 @@
     --icon-color: rgb(0, 0, 0);
     --icon-bg-color: rgb(255, 255, 255);
 
-    --contact-bg: rgb(0, 201, 255);
+    --contact-bg: rgb(0, 201, 255); 
 
 }
 
@@ -53,7 +53,7 @@ body.dark {
     --icon-color: rgb(252, 248, 248);
     --icon-bg-color: rgb(20, 16, 16);
 
-    --contact-bg: rgb(207, 54, 54);
+    --contact-bg: rgb(207, 54, 54); 
 
 }
 
@@ -343,19 +343,19 @@ body.dark #moon {
     gap: 30px;
 }
 
-.icon {
+.icon{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-
+   
     box-shadow: 3px 2px 3px 2px var(--first-shadow-color);
     cursor: pointer;
 }
 
-.icon i {
+.icon i{
     color: var(--icon-color);
     background-color: var(--icon-bg-color);
 }
@@ -458,8 +458,7 @@ h3 {
 }
 
 /* ----- ABOUT INFO ----- */
-.about-info,
-.bio-data {
+.about-info , .bio-data {
     position: relative;
     display: flex;
     align-items: center;
@@ -472,24 +471,24 @@ h3 {
     border-radius: 20px;
 }
 
-.about-info p {
+.about-info p  {
     text-align: center;
     font-size: 15px;
     color: #777;
 }
 
-.right-container td {
+.right-container td{
     color: #777;
 }
 
 
-.right-container table {
+.right-container table{
     color: var(--text-color-second);
 }
 
 /* ----- SKILLS ----- */
 
-.skill-container {
+.skill-container{
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -512,7 +511,7 @@ h3 {
 }
 
 
-.skills-box>h3 {
+.skills-box>h3{
     margin-bottom: 20px;
 }
 
@@ -532,7 +531,7 @@ h3 {
     border-radius: 5px;
 }
 
-.skills-box::after {
+.skills-box::after{
     content: "";
     position: absolute;
     bottom: -100%;
@@ -543,12 +542,12 @@ h3 {
     z-index: 1;
 }
 
-.skills-box:hover.skills-box>h3 {
+.skills-box:hover.skills-box>h3{
     color: var(--color-white);
     z-index: 2;
 }
 
-.skills-box:hover.skills-box span {
+.skills-box:hover.skills-box span{
     color: var(--first-color);
     background-color: var(--color-white);
     z-index: 2;
@@ -572,16 +571,16 @@ h3 {
 }
 
 .card {
-    width: 90px;
+    width: 90px ;
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
-    border: 10px solid white;
+    border: 10px solid white ;
     border-radius: 2rem;
     margin: 10px;
     display: flex;
     align-items: flex-end;
-    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
 }
 
@@ -590,7 +589,7 @@ input {
     display: none;
 }
 
-input:hover+label {
+input:hover + label {
     width: 700px;
 }
 
@@ -598,19 +597,16 @@ input:hover+label {
     background-position: center;
     background-image: url('./assets/images/jadoo.jpg');
 }
-
 .card[for="c2"] {
-    background-position: center;
+    background-position:center;
     background-image: url('./assets/images/greemy.jpg');
 }
-
 .card[for="c3"] {
-    background-position: center;
+    background-position:center;
     background-image: url('./assets/images/closet luxe.jpg');
 }
-
 .card[for="c4"] {
-    background-position: center;
+    background-position:center;
     background-image: url('./assets/images/portfolio.jpg');
 }
 
@@ -657,7 +653,7 @@ input:hover+label {
     height: 100%;
     transition: .6s;
     z-index: 1;
-}
+}   
 
 .contact-info::after {
     background: var(--color-white);
@@ -714,12 +710,12 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--second-color);
+    background: var(--contact-bg);
     color: var(--color-white);
 }
 
 .form-button>.btn:hover {
-    background: #00B5E7;
+    background: #fd3636;
 }
 
 .form-button i {
@@ -757,7 +753,7 @@ footer {
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
-    margin-inline: 20px;
+    margin-inline: 5px;
 }
 
 .footer_menu_list a:hover {
@@ -816,10 +812,14 @@ footer {
 
 /* ----- MEDIA QUERY == 800px / RESPONSIVE ----- */
 @media only screen and (max-width: 800px) {
-    .project-container {
+    .project-container{
         width: 300px;
-
     }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
 }
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
@@ -837,7 +837,7 @@ footer {
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px) {
-
+   
 
     .featured-box {
         flex-direction: column;
@@ -890,17 +890,17 @@ footer {
     }
 
     .project-container,
-    .skill-container {
+    .skill-container{
         justify-content: center;
     }
 
-    .project-box,
-    .skills-box {
+    .project-box ,
+    .skills-box{
         width: 80%;
     }
 
-    .footer_menu_list a {
-        margin-inline: 10px;
+    .middle-footer{
+        padding-inline: 10vw;
     }
 
 }
@@ -909,7 +909,7 @@ footer {
 
 @media only screen and (max-width: 540px) {
 
-    .nav-button .btn :not(i) {
+    .nav-button .btn{
         display: none;
     }
 
@@ -927,9 +927,5 @@ footer {
 
     .input-field {
         width: 100%;
-    }
-
-    .footer_menu_list a {
-        margin-inline: 5px;
     }
 }
