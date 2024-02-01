@@ -633,15 +633,10 @@ input:hover + label {
     margin-bottom: 20px;
 }
 
-.contact-info>p {
-    display: flex;
-    gap: 10px;
+.contact-info>table{
+    align-items: center;
     color: var(--color-white);
     margin-block: 5px;
-}
-
-.contact-info p>i {
-    font-size: 18px;
 }
 
 .contact-info::after {
@@ -898,11 +893,6 @@ footer {
     .middle-footer{
         padding-inline: 10vw;
     }
-
-    .contact-info p{
-        font-size: 10px;
-    }
-
 }
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
@@ -924,7 +914,7 @@ footer {
     .form-inputs {
         flex-direction: column;
     }
-
+    
     .input-field {
         width: 100%;
     }
