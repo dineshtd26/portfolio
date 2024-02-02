@@ -67,7 +67,8 @@ sr.reveal('.featured-image',{delay: 300})
 
 
 /* -- PROJECT BOX -- */
-sr.reveal('.project-container',{interval: 200})
+sr.reveal('.projects',{interval: 200})
+sr.reveal('.slideshow-container',{delay: 200})
 
 /* -- SKILL BOX -- */
 sr.reveal('.skills-box',{interval: 200})
@@ -99,7 +100,34 @@ const srRight = ScrollReveal({
 srRight.reveal('.bio-data',{delay: 100})
 srRight.reveal('.form-control',{delay: 100})
 
+/* -- project -- */
 
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
 
 /* ----- CHANGE ACTIVE LINK ----- */
 
